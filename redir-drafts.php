@@ -1,17 +1,17 @@
 <?php
 /**
- * Plugin Name: Redirect Draft Posts
+ * Plugin Name: AC - Redirect Draft Posts
  * Description: Lists all draft posts (excluding sdm_downloads) and lets you map their original slug to a chosen published URL for a 301 redirect. Works whether you're logged in or not—draft content won't leak. Includes a “Test Redirect” link that pops up a window to verify the final destination.
- * Version: 1.7
- * Author: Your Name
+ * Version: 1
+ * Author: Adam Chiaravalle @ ACWebDev, LLC.
  */
 
 // 1. Admin menu remains the same
 add_action('admin_menu', 'rdp_add_admin_menu');
 function rdp_add_admin_menu() {
     add_menu_page(
-        'Redirect Draft Posts',
-        'Draft Redirects',
+        'AC - Redirect Draft Posts',
+        'AC - Draft Redirects',
         'manage_options',
         'redirect-draft-posts',
         'rdp_render_admin_page',
